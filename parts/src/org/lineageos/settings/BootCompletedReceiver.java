@@ -21,6 +21,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.hardware.display.DisplayManager;
+import android.os.IBinder;
+import android.view.Display;
+import android.view.Display.HdrCapabilities;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
@@ -37,5 +41,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DozeUtils.onBootCompleted(context);
         ThermalUtils.startService(context);
         RefreshUtils.startService(context);        
+
+        // Override HDR types
+        final DisplayManager displayManager = context.getSystemService(DisplayManager.class);
+        displayManager.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
+                HdrCapabilities.HDR_TYPE_DOLBY_VISION, HdrCapabilities.HDR_TYPE_HDR10,
+                HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS});
     }
 }
