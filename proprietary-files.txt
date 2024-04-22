@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from unicorn V816.0.3.0.ULECNXM
+# All unpinned blobs below are extracted from ziyi V816.0.4.0.ULLMIXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -570,11 +570,11 @@ vendor/lib64/libllvm-qgl.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# Hotword Enrollment - from cupid V816.0.3.0.ULCEUXM
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|37ab3f58bb62e4cd496279a9d4e1638ce59af668
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|ace374fc1ceb11d0df65560b5a51feda10699024
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|b768584073c6348713ffd0139d44039c9efc775a
+# Hotword Enrollment
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Identity service
 vendor/bin/hw/android.hardware.identity-service-qti
@@ -926,12 +926,14 @@ system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-trd
 vendor/etc/init/init.qdmastats.rc
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib/libgrpc++_unsecure.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.1.so
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/libgrpc++_unsecure.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
@@ -1093,14 +1095,13 @@ product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk|48dccfd5263b9abccb84d41bd0f65844e10386fe
+system_ext/app/QtiTelephony/QtiTelephony.apk|8a61be891343e2c4bb5b21ca8c28c53bea2217cf
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar|e71cac092f2ca80d24d795200ca8c40bf317085d
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
@@ -1125,7 +1126,7 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk|094b115d0aa087ce2fd0eb4f02f2d2384adf1299
+system_ext/priv-app/ims/ims.apk|7a4b54db168d6d5f66be0b8b14d589420b1664d8
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/ATFWD-daemon
@@ -1630,9 +1631,9 @@ vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
-vendor/etc/tunings.txt
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml
+vendor/lib/libmisight.so
 vendor/lib/libvppcommon.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
@@ -1643,6 +1644,7 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib/vendor.qti.hardware.vpp@2.0.so
+vendor/lib64/libmisight.so
 vendor/lib64/libvppcommon.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
@@ -1673,7 +1675,7 @@ vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 
 # WiFi Display
--system/framework/WfdCommon.jar
+system/framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
@@ -1713,7 +1715,7 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
--system_ext/priv-app/WfdService/WfdService.apk
+system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
