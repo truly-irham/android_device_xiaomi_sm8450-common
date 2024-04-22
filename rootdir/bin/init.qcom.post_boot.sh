@@ -5802,5 +5802,3 @@ setprop persist.vendor.mmi.misc_dev_path $real_path
 
 # Enable fast charging by default
 echo 1 > /sys/class/qcom-battery/sport_mode
-echo 1 > /sys/class/qcom-battery/fastchg_mode
-echo 1 > /sys/class/qcom-battery/fg1_fastcharge
